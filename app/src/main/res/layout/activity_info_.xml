@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info_Activity">
+
+    <ImageView
+        android:id="@+id/icon_info_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/graph_view_info_id"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="изменения за последнюю неделю"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@id/graph_view_info_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name_info_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_info_id" />
+    <TextView
+        android:id="@+id/price_text_id"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/icon_info_id"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="цена(usd)"/>
+    <TextView
+        android:id="@+id/price_value_id"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/icon_info_id"
+        app:layout_constraintTop_toBottomOf="@id/price_text_id" />
+    <TextView
+        android:id="@+id/textPriceStat_id"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toEndOf="@id/price_text_id"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:text="капитализация"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/capital_info_id"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/price_text_id"
+        app:layout_constraintTop_toBottomOf="@id/textPriceStat_id" />
+    <TextView
+        android:id="@+id/demarcLine_0"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_info_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/volume_text_id"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demarcLine_0"
+        android:background="#2220"
+        android:text="объем(за 24часа)"/>
+
+    <TextView
+        android:id="@+id/volume_value_id"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/demarcLine_0"
+        app:layout_constraintStart_toEndOf="@+id/volume_text_id"
+        android:background="#2220"
+         />
+    <TextView
+        android:id="@+id/demarcLine_1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/volume_text_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#000000"/>
+    <TextView
+        android:id="@+id/Circulating_pr_text_id"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demarcLine_1"
+        android:background="#2220"
+        android:text="циркулирующее предложение"/>
+
+    <TextView
+        android:id="@+id/circulating_pr__value_id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/demarcLine_1"
+        app:layout_constraintStart_toEndOf="@+id/Circulating_pr_text_id"
+        android:background="#2220"
+        />
+    <TextView
+        android:id="@+id/demarcLine_2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/circulating_pr__value_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/changes_text_id"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demarcLine_2"
+        android:background="#2220"
+        android:text="изменения за 24 часа"/>
+
+    <TextView
+        android:id="@+id/change_value_id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/demarcLine_2"
+        app:layout_constraintStart_toEndOf="@+id/changes_text_id"
+        android:background="#2220"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

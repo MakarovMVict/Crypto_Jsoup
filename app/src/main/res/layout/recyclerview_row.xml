@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="#330099">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:background="#330099">
+<LinearLayout
+    android:layout_width="70dp"
+    android:layout_height="90dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"/>
+    <Button
+        android:id="@+id/button_more_id"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:text="подробнее.."
+        android:textSize="9dp"
+        android:gravity="center"/>
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_info_id"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:textColor="#336669"
+        android:background="#000033"/>
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Цена"
+            android:textColor="#336669"/>
+        <TextView
+            android:id="@+id/textView_price_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="#336669"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="Капитализация"
+            android:textColor="#336669"/>
+        <TextView
+            android:id="@+id/textView_capital_id"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#336669"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:text="объем(за 24ч)"
+            android:textColor="#336669"/>
+        <TextView
+            android:id="@+id/textView_changes_id"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#336669"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="график цен (за 7дн)"
+            android:textSize="9dp"
+            android:gravity="center"
+            android:textColor="#336669"/>
+        <ImageView
+            android:id="@+id/graph_View_id"
+            android:layout_width="70dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#66ffff"/>
+
+
+
+</LinearLayout>
